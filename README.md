@@ -1,4 +1,4 @@
-# Andri Watches – Shopify Theme
+Glassmorphism-shopify-theme 
 
 A dark, premium, gold-accent Shopify Online Store 2.0 theme recreated from the supplied visual reference.
 
