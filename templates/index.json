@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "hero": {"type":"hero","settings":{}},
+    "features": {"type":"features","settings":{}},
+    "categories": {"type":"category-cards","settings":{}},
+    "best": {"type":"best-sellers","settings":{}},
+    "premium": {"type":"premium-banner","settings":{}}
+  },
+  "order": ["hero","features","categories","best","premium"]
+}

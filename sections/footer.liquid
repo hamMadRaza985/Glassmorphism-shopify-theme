@@ -1,0 +1,11 @@
+<footer class="site-footer">
+  <div class="page-width footer-inner">
+    <div><div class="footer-brand">{{ shop.name }}</div><div style="font-size:10px;margin-top:7px">Timeless elegance, crafted for you.</div></div>
+    <div class="footer-links">
+      {% for link in section.settings.menu.links %}<a href="{{ link.url }}">{{ link.title }}</a>{% endfor %}
+    </div>
+  </div>
+</footer>
+{% schema %}
+{"name":"Footer","settings":[{"type":"link_list","id":"menu","label":"Footer menu","default":"footer"}]}
+{% endschema %}

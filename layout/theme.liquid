@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="{{ settings.color_accent }}">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <title>{% if page_title %}{{ page_title }}{% if current_page != 1 %} – {{ current_page }}{% endif %}{% unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}{% else %}{{ shop.name }}{% endif %}</title>
+  {{ content_for_header }}
+  {{ 'andri-theme.css' | asset_url | stylesheet_tag }}
+</head>
+<body class="andri-theme">
+  {% sections 'header-group' %}
+  <main id="MainContent" role="main">
+    {{ content_for_layout }}
+  </main>
+  {% section 'footer' %}
+  <script>
+    document.addEventListener('click', function(e) {
+      const btn = e.target.closest('[data-menu-toggle]');
+      if (!btn) return;
+      document.body.classList.toggle('mobile-nav-open');
+      btn.setAttribute('aria-expanded', document.body.classList.contains('mobile-nav-open'));
+    });
+  </script>
+</body>
+</html>

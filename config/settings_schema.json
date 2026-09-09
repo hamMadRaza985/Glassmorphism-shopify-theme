@@ -1,0 +1,7 @@
+[
+  {"name":"Andri theme","settings":[
+    {"type":"color","id":"color_accent","label":"Gold accent","default":"#d9a75f"},
+    {"type":"color","id":"color_background","label":"Background","default":"#070707"},
+    {"type":"color","id":"color_text","label":"Text","default":"#f5f1e8"}
+  ]}
+]
