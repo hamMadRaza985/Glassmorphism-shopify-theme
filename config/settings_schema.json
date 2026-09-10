@@ -11,56 +11,61 @@
     "name": "Theme Settings",
     "settings": [
       {
-        "type": "color",
-        "id": "body_background_color",
-        "label": "Body Background Color",
-        "default": "rgba(0, 0, 0, 0)"
-      },
-      {
-        "type": "image_picker",
-        "id": "body_background_image",
-        "label": "Body Background Image"
-      },
-      {
-        "type": "select",
-        "id": "background_size",
-        "label": "Background Image Size",
-        "options": [
-          {
-            "value": "cover",
-            "label": "Cover"
-          },
-          {
-            "value": "contain",
-            "label": "Contain"
-          },
-          {
-            "value": "auto",
-            "label": "Auto"
-          }
-        ],
-        "default": "cover"
-      },
-      {
-        "type": "select",
-        "id": "background_position",
-        "label": "Background Position",
-        "options": [
-          {
-            "value": "center",
-            "label": "Center"
-          },
-          {
-            "value": "top",
-            "label": "Top"
-          },
-          {
-            "value": "bottom",
-            "label": "Bottom"
-          }
-        ],
-        "default": "center"
-      }
+"type":"select",
+"id":"background_mode",
+"label":"Background Mode",
+
+"options":[
+
+{
+"value":"transparent",
+"label":"Transparent"
+},
+
+{
+"value":"color",
+"label":"Custom Color"
+}
+
+],
+
+"default":"transparent"
+},
+
+
+{
+"type":"color",
+"id":"background_color",
+"label":"Background Color",
+"default":"#ffffff"
+},
+
+
+{
+"type":"image_picker",
+"id":"body_background_image",
+"label":"Background Image"
+},
+
+
+{
+"type":"checkbox",
+"id":"enable_background_blur",
+"label":"Enable Background Blur",
+"default":false
+},
+
+
+{
+"type":"range",
+"id":"background_blur_amount",
+"label":"Background Blur Amount",
+
+"min":0,
+"max":30,
+"step":1,
+"default":10
+}
     ]
   },
 
