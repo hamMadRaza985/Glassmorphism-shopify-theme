@@ -23,7 +23,7 @@
       {
         "type": "font_picker",
         "id": "type_label_font",
-        "default": "playfair_display_n4",
+        "default": "plus_jakarta_sans_n4",
         "label": "t:general.label_font"
       }
     ]
