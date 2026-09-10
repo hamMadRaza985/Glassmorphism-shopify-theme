@@ -1,27 +1,36 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="{{ settings.color_accent }}">
-  <link rel="canonical" href="{{ canonical_url }}">
-  <title>{% if page_title %}{{ page_title }}{% if current_page != 1 %} – {{ current_page }}{% endif %}{% unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}{% else %}{{ shop.name }}{% endif %}</title>
-  {{ content_for_header }}
-  {{ 'andri-theme.css' | asset_url | stylesheet_tag }}
-</head>
-<body class="andri-theme">
-  {% sections 'header-group' %}
-  <main id="MainContent" role="main">
+  <head>
+    {% # Inlined CSS Variables %}
+    {% render 'css-variables' %}
+
+    {% comment %}
+      Font preloading:
+      1. Preconnect to font CDN for faster connection
+      2. Preload only the critical font variant (base weight)
+      3. Additional variants load on-demand via @font-face
+    {% endcomment %}
+    {% unless settings.type_primary_font.system? %}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+
+      {% comment %} Preload the base font variant for initial page render {% endcomment %}
+      {{ settings.type_primary_font | font_url | preload_tag: as: 'font', crossorigin: 'anonymous' }}
+    {% endunless %}
+
+    {% # Load and preload the critical CSS %}
+    {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+
+    {% # Social, title, etc. %}
+    {% render 'meta-tags' %}
+
+    {{ content_for_header }}
+  </head>
+
+  <body>
+    {% sections 'header-group' %}
+
     {{ content_for_layout }}
-  </main>
-  {% section 'footer' %}
-  <script>
-    document.addEventListener('click', function(e) {
-      const btn = e.target.closest('[data-menu-toggle]');
-      if (!btn) return;
-      document.body.classList.toggle('mobile-nav-open');
-      btn.setAttribute('aria-expanded', document.body.classList.contains('mobile-nav-open'));
-    });
-  </script>
-</body>
+
+    {% sections 'footer-group' %}
+  </body>
 </html>

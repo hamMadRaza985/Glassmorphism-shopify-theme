@@ -1,1 +1,0 @@
-Upload your own watch/hero/category images through the Shopify Theme Editor image pickers.
