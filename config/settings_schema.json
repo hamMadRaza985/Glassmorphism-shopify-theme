@@ -87,7 +87,7 @@
         "type": "color_palette",
         "id": "color_palette",
         "default": {
-          "background": "#ffffff",
+          "background": "#d4af37",
           "foreground": "#000000"
         }
       }
