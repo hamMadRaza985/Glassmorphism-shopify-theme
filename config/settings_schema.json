@@ -7,6 +7,19 @@
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
+  {
+    "name": "t:general.colors",
+    "settings": [
+      {
+        "type": "color_palette",
+        "id": "color_palette",
+        "default": {
+          "background": "#ffffff",
+          "foreground": "#000000"
+        }
+      }
+    ]
+  },
 
 {
   "name": "t:general.logo_and_favicon",
@@ -85,39 +98,5 @@
         "default": 20
       }
     ]
-  },
-  {
-    "name": "t:general.colors",
-    "settings": [
-        {
-        "type": "color",
-        "id": "primary_color",
-        "default": "#d4af37",
-        "label": "t:labels.primary_color"
-      },
-      {
-        "type": "color",
-        "id": "background_color",
-        "default": "#FFFFFF",
-        "label": "t:labels.background"
-      },
-      {
-        "type": "color",
-        "id": "foreground_color",
-        "default": "#333333",
-        "label": "t:labels.foreground"
-      },
-     
-      {
-        "type": "range",
-        "id": "input_corner_radius",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "unit": "px",
-        "label": "t:labels.input_corner_radius",
-        "default": 4
-      }
-    ]
-  },
+  }
 ]
