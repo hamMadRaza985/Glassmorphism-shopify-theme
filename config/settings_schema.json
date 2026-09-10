@@ -68,7 +68,7 @@
         "default": "#333333",
         "label": "t:labels.foreground"
       },
-         {
+       {
         "type": "color",
         "id": "primary_color",
         "default": "#d4af37",
