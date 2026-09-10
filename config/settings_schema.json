@@ -7,6 +7,17 @@
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
+
+{
+  "name": "t:general.logo_and_favicon",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "t:content.manage_store_name"
+    }
+  ]
+},
+
   {
     "name": "t:general.typography",
     "settings": [

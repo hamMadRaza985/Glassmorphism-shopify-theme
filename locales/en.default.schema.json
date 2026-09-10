@@ -1,4 +1,8 @@
 {
+  "content": {
+       "manage_store_name": "[Manage store name](/admin/settings/general?edit=storeName)",
+  },
+  
   "general": {
     "404": "Not found",
     "article": "Article",
@@ -32,7 +36,8 @@
     "text": "Text",
     "theme": "Theme",
     "typography": "Typography",
-    "label_font": "Label font"
+    "label_font": "Label font",
+    "logo_and_favicon": "Logo and favicon"
   },
   "labels": {
     "alignment": "Alignment",
