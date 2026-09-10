@@ -7,7 +7,62 @@
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
- 
+   {
+    "name": "Theme Settings",
+    "settings": [
+      {
+        "type": "color",
+        "id": "body_background_color",
+        "label": "Body Background Color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "image_picker",
+        "id": "body_background_image",
+        "label": "Body Background Image"
+      },
+      {
+        "type": "select",
+        "id": "background_size",
+        "label": "Background Image Size",
+        "options": [
+          {
+            "value": "cover",
+            "label": "Cover"
+          },
+          {
+            "value": "contain",
+            "label": "Contain"
+          },
+          {
+            "value": "auto",
+            "label": "Auto"
+          }
+        ],
+        "default": "cover"
+      },
+      {
+        "type": "select",
+        "id": "background_position",
+        "label": "Background Position",
+        "options": [
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "top",
+            "label": "Top"
+          },
+          {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ],
+        "default": "center"
+      }
+    ]
+  },
 
 {
   "name": "t:general.logo_and_favicon",
