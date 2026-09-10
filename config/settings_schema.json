@@ -24,7 +24,7 @@
       "type": "image_picker",
       "id": "logo_inverse",
       "label": "t:labels.logo_inverse",
-      "info": "t:content.logo_inverse_info"
+      "info": "t:content.inverse_logo_info"
     }
   ]
 },
