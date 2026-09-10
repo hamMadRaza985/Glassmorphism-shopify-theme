@@ -72,7 +72,7 @@
         "type": "color",
         "id": "primary_color",
         "default": "#d4af37",
-        "label": "t:labels.primary"
+        "label": "t:labels.primary_color"
       },
       {
         "type": "range",
