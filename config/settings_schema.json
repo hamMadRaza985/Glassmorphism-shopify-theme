@@ -7,19 +7,7 @@
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
   },
-  {
-    "name": "t:general.colors",
-    "settings": [
-      {
-        "type": "color_palette",
-        "id": "color_palette",
-        "default": {
-          "background": "#ffffff",
-          "foreground": "#000000"
-        }
-      }
-    ]
-  },
+ 
 
 {
   "name": "t:general.logo_and_favicon",
@@ -46,7 +34,19 @@
       }
   ]
 },
-
+ {
+    "name": "t:general.colors",
+    "settings": [
+      {
+        "type": "color_palette",
+        "id": "color_palette",
+        "default": {
+          "background": "#ffffff",
+          "foreground": "#000000"
+        }
+      }
+    ]
+  },
   {
     "name": "t:general.typography",
     "settings": [
