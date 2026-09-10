@@ -55,6 +55,13 @@
         "content": "t:general.fonts"
       },
       {
+        "type": "color",
+        "id": "page_text_color",
+        "label": "t:labels.page_text_color",
+        "default": "{{ settings.color_palette.foreground }}",
+        "info": "t:content.page_text_color_default_info"
+      },
+      {
         "type": "font_picker",
         "id": "type_primary_font",
         "default": "playfair_display_n4",

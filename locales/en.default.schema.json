@@ -2,6 +2,7 @@
   "content": {
        "manage_store_name": "[Manage store name](/admin/settings/general?edit=storeName)",
        "inverse_logo_info": "Used when transparent header background is set to Inverse",
+       "page_text_color_default_info": "Default for theme sections",
   },
 
   "general": {
@@ -61,7 +62,8 @@
     "logo_inverse":"Inverse logo",
     "desktop_height":"Desktop height",
     "logo_height": "Only affects header logo",
-    "favicon": "Favicon"
+    "favicon": "Favicon",
+    "page_text_color": "Text color",
   },
   "options": {
     "alignment": {
