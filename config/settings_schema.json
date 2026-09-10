@@ -19,6 +19,12 @@
       "type": "image_picker",
       "id": "logo",
       "label": "t:labels.default_logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_inverse",
+      "label": "t:labels.logo_inverse",
+      "info": "t:content.logo_inverse_info"
     }
   ]
 },
