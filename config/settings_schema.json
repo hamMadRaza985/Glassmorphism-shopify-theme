@@ -25,7 +25,12 @@
       "id": "logo_inverse",
       "label": "t:labels.logo_inverse",
       "info": "t:content.inverse_logo_info"
-    }
+    },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "t:labels.favicon"
+      }
   ]
 },
 

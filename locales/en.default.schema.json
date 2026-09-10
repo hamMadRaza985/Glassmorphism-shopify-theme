@@ -61,6 +61,7 @@
     "logo_inverse":"Inverse logo",
     "desktop_height":"Desktop height",
     "logo_height": "Only affects header logo",
+    "favicon": "Favicon"
   },
   "options": {
     "alignment": {
