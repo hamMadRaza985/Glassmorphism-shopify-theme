@@ -25,18 +25,6 @@
       "id": "logo_inverse",
       "label": "t:labels.logo_inverse",
       "info": "t:content.inverse_logo_info"
-    },
-    {
-      "type":"range",
-      "id":"logo_height",
-      "label":"t:labels.desktop_height",
-      "min":12,
-      "max":100,
-      "step":1,
-      "unit":"px",
-      "default":36,
-       "visible_if": "{{ settings.logo != blank or settings.logo_height != blank }}",
-      "info": "t:labels.logo_height"
     }
   ]
 },
