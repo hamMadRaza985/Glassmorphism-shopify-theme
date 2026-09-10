@@ -31,23 +31,54 @@
     {{ content_for_header }}
 
   </head>
+<style>
+  html,
+  body {
+    min-height: 100%;
+  }
 
-  <body style="
-background-color: {{ settings.body_background_color }};
-{% if settings.body_background_image %}
-background-image:url('{{ settings.body_background_image | image_url }}');
-background-size:{{ settings.background_size }};
-background-position:{{ settings.background_position }};
-background-repeat:no-repeat;
-background-attachment:fixed;
-{% endif %}
-">
+  body {
+    margin: 0;
+
+    {% if settings.background_mode == 'color' %}
+      background-color: {{ settings.background_color }};
+    {% else %}
+      background-color: transparent;
+    {% endif %}
+  }
+
+  .site-background {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    {% if settings.body_background_image %}
+      background-image: url('{{ settings.body_background_image | image_url: width: 2400 }}');
+      background-repeat: no-repeat;
+      background-size: {{ settings.background_size }};
+      background-position: {{ settings.background_position }};
+    {% endif %}
+
+    {% if settings.enable_background_blur %}
+      filter: blur({{ settings.background_blur_amount }}px);
+      transform: scale(1.04);
+    {% endif %}
+  }
+
+  .site-content {
+    position: relative;
+    z-index: 1;
+  }
+</style>
+  <body>
 
     {% sections 'announcement-bar' %}
 
     {% sections 'header-group' %}
 
     <main>
+      
       {{ content_for_layout }}
     </main>
 

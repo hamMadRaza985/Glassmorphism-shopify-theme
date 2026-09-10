@@ -10,61 +10,95 @@
    {
     "name": "Theme Settings",
     "settings": [
-      {
-"type":"select",
-"id":"background_mode",
-"label":"Background Mode",
-
-"options":[
-
 {
-"value":"transparent",
-"label":"Transparent"
+  "type": "select",
+  "id": "background_mode",
+  "label": "Background Mode",
+  "options": [
+    {
+      "value": "transparent",
+      "label": "Transparent"
+    },
+    {
+      "value": "color",
+      "label": "Custom Color"
+    }
+  ],
+  "default": "transparent"
 },
-
 {
-"value":"color",
-"label":"Custom Color"
-}
-
-],
-
-"default":"transparent"
+  "type": "color",
+  "id": "background_color",
+  "label": "Background Color",
+  "default": "#ffffff"
 },
-
-
 {
-"type":"color",
-"id":"background_color",
-"label":"Background Color",
-"default":"#ffffff"
+  "type": "image_picker",
+  "id": "body_background_image",
+  "label": "Background Image"
 },
-
-
 {
-"type":"image_picker",
-"id":"body_background_image",
-"label":"Background Image"
+  "type": "select",
+  "id": "background_size",
+  "label": "Background Image Size",
+  "options": [
+    {
+      "value": "cover",
+      "label": "Cover"
+    },
+    {
+      "value": "contain",
+      "label": "Contain"
+    },
+    {
+      "value": "auto",
+      "label": "Auto"
+    }
+  ],
+  "default": "cover"
 },
-
-
 {
-"type":"checkbox",
-"id":"enable_background_blur",
-"label":"Enable Background Blur",
-"default":false
+  "type": "select",
+  "id": "background_position",
+  "label": "Background Image Position",
+  "options": [
+    {
+      "value": "center",
+      "label": "Center"
+    },
+    {
+      "value": "top",
+      "label": "Top"
+    },
+    {
+      "value": "bottom",
+      "label": "Bottom"
+    },
+    {
+      "value": "left",
+      "label": "Left"
+    },
+    {
+      "value": "right",
+      "label": "Right"
+    }
+  ],
+  "default": "center"
 },
-
-
 {
-"type":"range",
-"id":"background_blur_amount",
-"label":"Background Blur Amount",
-
-"min":0,
-"max":30,
-"step":1,
-"default":10
+  "type": "checkbox",
+  "id": "enable_background_blur",
+  "label": "Enable Background Blur",
+  "default": false
+},
+{
+  "type": "range",
+  "id": "background_blur_amount",
+  "label": "Blur Amount",
+  "min": 0,
+  "max": 30,
+  "step": 1,
+  "default": 10
 }
     ]
   },

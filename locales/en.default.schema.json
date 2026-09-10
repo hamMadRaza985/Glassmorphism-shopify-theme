@@ -64,6 +64,10 @@
     "logo_height": "Only affects header logo",
     "favicon": "Favicon",
     "page_text_color": "Text color",
+    "background_mode":"Background mode",
+    "transparent":"Transparent",
+    "color":"Color",
+    "background_color":"Background color",
   },
   "options": {
     "alignment": {
