@@ -56,6 +56,12 @@
   {
     "name": "t:general.colors",
     "settings": [
+        {
+        "type": "color",
+        "id": "primary_color",
+        "default": "#d4af37",
+        "label": "t:labels.primary_color"
+      },
       {
         "type": "color",
         "id": "background_color",
@@ -68,12 +74,7 @@
         "default": "#333333",
         "label": "t:labels.foreground"
       },
-       {
-        "type": "color",
-        "id": "primary_color",
-        "default": "#d4af37",
-        "label": "t:labels.primary_color"
-      },
+     
       {
         "type": "range",
         "id": "input_corner_radius",
