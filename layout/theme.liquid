@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
-    {% # Inlined CSS Variables %}
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     {% render 'css-variables' %}
 
-    {% comment %}
-      Font preloading:
-      1. Preconnect to font CDN for faster connection
-      2. Preload only the critical font variant (base weight)
-      3. Additional variants load on-demand via @font-face
-    {% endcomment %}
+ 
     {% unless settings.type_primary_font.system? %}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
 
@@ -22,15 +20,23 @@
 
     {% # Social, title, etc. %}
     {% render 'meta-tags' %}
-
+     <title>{{ page_title }}</title>
     {{ content_for_header }}
+
   </head>
 
   <body>
+
+    {% sections 'announcement-bar' %}
+
     {% sections 'header-group' %}
 
-    {{ content_for_layout }}
+    <main>
+      {{ content_for_layout }}
+    </main>
 
     {% sections 'footer-group' %}
+
+    {% comment %} <script src="{{ 'theme.js' | asset_url }}"defer></script> {% endcomment %}
   </body>
 </html>

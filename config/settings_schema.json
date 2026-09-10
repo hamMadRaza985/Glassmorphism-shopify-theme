@@ -79,5 +79,18 @@
         "default": 4
       }
     ]
+  },
+  {
+    "name": "t:names.colors",
+    "settings": [
+      {
+        "type": "color_palette",
+        "id": "color_palette",
+        "default": {
+          "background": "#ffffff",
+          "foreground": "#000000"
+        }
+      }
+    ]
   }
 ]
