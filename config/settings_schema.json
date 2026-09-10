@@ -14,6 +14,11 @@
     {
       "type": "paragraph",
       "content": "t:content.manage_store_name"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "t:labels.default_logo"
     }
   ]
 },

@@ -2,7 +2,7 @@
   "content": {
        "manage_store_name": "[Manage store name](/admin/settings/general?edit=storeName)",
   },
-  
+
   "general": {
     "404": "Not found",
     "article": "Article",
@@ -55,7 +55,8 @@
     "page_width": "Page width",
     "show_payment_icons": "Show payment icons",
     "text_style": "Text style",
-    "text": "Text"
+    "text": "Text",
+    "default_logo": "Default logo"
   },
   "options": {
     "alignment": {
