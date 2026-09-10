@@ -58,7 +58,9 @@
     "text_style": "Text style",
     "text": "Text",
     "default_logo": "Default logo",
-    "logo_inverse":"Inverse logo"
+    "logo_inverse":"Inverse logo",
+    "desktop_height":"Desktop height",
+    "logo_height": "Only affects header logo",
   },
   "options": {
     "alignment": {
@@ -83,5 +85,5 @@
       "subtitle": "Subtitle",
       "normal": "Normal text"
     },
-  }
+  },
 }
