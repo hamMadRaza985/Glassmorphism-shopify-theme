@@ -26,27 +26,30 @@
 
   </head>
 
-  <body style="
-background-color: {{ settings.body_background_color }};
-{% if settings.body_background_image %}
-background-image:url('{{ settings.body_background_image | image_url }}');
-background-size:{{ settings.background_size }};
-background-position:{{ settings.background_position }};
-background-repeat:no-repeat;
-background-attachment:fixed;
-{% endif %}
-">
+<body>
 
-    {% sections 'announcement-bar' %}
+  <div
+    class="site-background"
+    aria-hidden="true"
+    style="
+      --site-background-color: {{ settings.body_background_color }};
+      --site-background-image: {% if settings.body_background_image %}url('{{ settings.body_background_image | image_url: width: 2400 }}'){% else %}none{% endif %};
+      --site-background-size: {{ settings.background_size }};
+      --site-background-position: {{ settings.background_position }};
+      --site-background-blur: {{ settings.background_blur | default: 0 }}px;
+      --site-background-overlay: {{ settings.background_overlay_opacity | default: 0 }}%;
+    "
+  ></div>
 
-    {% sections 'header-group' %}
+  {% sections 'announcement-bar' %}
 
-    <main>
-      {{ content_for_layout }}
-    </main>
+  {% sections 'header-group' %}
 
-    {% sections 'footer-group' %}
+  <main>
+    {{ content_for_layout }}
+  </main>
 
-    {% comment %} <script src="{{ 'theme.js' | asset_url }}"defer></script> {% endcomment %}
-  </body>
+  {% sections 'footer-group' %}
+
+</body>
 </html>
