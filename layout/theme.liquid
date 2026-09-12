@@ -36,7 +36,7 @@
       --site-background-image: {% if settings.body_background_image %}url('{{ settings.body_background_image | image_url: width: 2400 }}'){% else %}none{% endif %};
       --site-background-size: {{ settings.background_size }};
       --site-background-position: {{ settings.background_position }};
-      --site-background-blur: {{ settings.background_blur | default: 0 }}px;
+      --site-background-blur: {% if settings.background_blur_enabled %}{{ settings.background_blur }}px{% else %}0px{% endif %};
       --site-background-overlay: {{ settings.background_overlay_opacity | default: 0 }}%;
     "
   ></div>
