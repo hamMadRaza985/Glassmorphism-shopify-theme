@@ -37,14 +37,11 @@
       --site-background-size: {{ settings.background_size }};
       --site-background-position: {{ settings.background_position }};
       --site-background-blur: {% if settings.background_blur_enabled %}{{ settings.background_blur }}px{% else %}0px{% endif %};
-      --site-background-overlay: {{ settings.background_overlay_opacity | default: 0 }}%;
     "
   ></div>
 
-  {% comment %} {% sections 'announcement-bar' %}
+  {% sections 'header-group' %}
 
-  {% sections 'header-group' %} {% endcomment %}
-{% sections 'header-group' %}
   <main>
     {{ content_for_layout }}
   </main>
