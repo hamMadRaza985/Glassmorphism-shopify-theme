@@ -41,10 +41,10 @@
     "
   ></div>
 
-  {% sections 'announcement-bar' %}
+  {% comment %} {% sections 'announcement-bar' %}
 
-  {% sections 'header-group' %}
-
+  {% sections 'header-group' %} {% endcomment %}
+{% sections 'header-group' %}
   <main>
     {{ content_for_layout }}
   </main>
