@@ -121,6 +121,22 @@
         "label": "Background image"
       },
       {
+  "type": "checkbox",
+  "id": "background_blur_enabled",
+  "label": "Blur background image",
+  "default": true
+},
+{
+  "type": "range",
+  "id": "background_blur",
+  "min": 0,
+  "max": 40,
+  "step": 1,
+  "unit": "px",
+  "label": "Background blur",
+  "default": 8
+},
+      {
         "type": "select",
         "id": "background_size",
         "label": "Background image size",
